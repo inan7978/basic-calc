@@ -35,10 +35,6 @@ function Calculator() {
     );
   });
 
-  function finalRound(val) {
-    // have final sum go through this to round it off a bit.
-  }
-
   function submitHandler() {
     const operand1 = prev;
     const operand2 = value;
@@ -70,8 +66,6 @@ function Calculator() {
   }
 
   function btnPressed(num) {
-    // typeof(num) === 'number' && (decPres ? setValue(value + (num/(Math.pow(10, decPlace)))) : setValue(value*10 + num));
-
     if (typeof num === "number") {
       if (decPres) {
         setValue(value + num / Math.pow(10, decPlace));

@@ -1,5 +1,3 @@
-# Getting Started with Create React App
+# This is a basic calculator.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-This is a basic calculator.
+Not much else to it.
