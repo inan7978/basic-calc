@@ -29,7 +29,13 @@ function Calculator() {
 
   const mappedBtns = buttons.map((button) => {
     return (
-      <button className="keys" onClick={() => btnPressed(button)}>
+      <button
+        className="keys"
+        onClick={() => btnPressed(button)}
+        onKeyDown={() => {
+          console.log("Done");
+        }}
+      >
         {button}
       </button>
     );
