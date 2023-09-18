@@ -1,52 +1,46 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 .container {
-    width:500px;
-    max-height:450px;
-    background-color: azure;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 500px;
+  max-height: 450px;
+  background-color: azure;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .screen {
-    height:100px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 8px;
-    padding-right: 8px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-.value {}
-
-.keys-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap:15px;
-    padding: 8px;
-    padding-top: 12px;
+.keys-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  padding: 8px;
+  padding-top: 12px;
 }
 
-.keys{
-height: 50px;
-font-size: 25px;
-border: none;
-background-color: rgb(238, 238, 238);
-border-radius: 10px;
+.keys {
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
 }
 
 .equal-sign {
-    height: 98%;
-    grid-area: 2 / 4 / 5 / 5;
+  height: 98%;
+  grid-area: 2 / 4 / 5 / 5;
 }
 
-.all-clear{
-    background-color: red;
-    color: white;
-}
-
-.prev-val{
-
+.all-clear {
+  background-color: red;
+  color: white;
 }
