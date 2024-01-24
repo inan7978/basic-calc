@@ -5,8 +5,8 @@
 
 # How To Run It
 
-- Clone the direcotry
-- "npm i" in the root direcotry
+- Clone the directory
+- "npm i" in the root directory
 - "npm start"
 
 # Known bug(s)
