@@ -30,6 +30,7 @@ function Calculator() {
   const mappedBtns = buttons.map((button) => {
     return (
       <button
+        key={button}
         className="keys"
         onClick={() => btnPressed(button)}
         onKeyDown={() => {
@@ -74,10 +75,29 @@ function Calculator() {
   function btnPressed(num) {
     if (typeof num === "number") {
       if (decPres) {
-        setValue(value + num / Math.pow(10, decPlace));
-        setDecPlace(decPlace + 1);
+        if (value >= 0) {
+          setValue(value + num / Math.pow(10, decPlace));
+          setDecPlace(decPlace + 1);
+        } else {
+          console.log("kurec");
+          let temp = value;
+          temp = temp * -1;
+          temp = temp + num / Math.pow(10, decPlace);
+          temp = temp * -1;
+          setValue(temp);
+          setDecPlace(decPlace + 1);
+        }
       } else {
-        setValue(value * 10 + num);
+        if (value < 0) {
+          // aka a negative value
+          let temp = value; // -69
+          temp = temp * -1; // 69
+          temp = temp * 10 + num; // if num is 3 then 693
+          temp = temp * -1; // -693
+          setValue(temp);
+        } else {
+          setValue(value * 10 + num);
+        }
       }
     }
     if (typeof num === "string") {
