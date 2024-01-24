@@ -9,4 +9,6 @@
 - "npm i" in the root direcotry
 - "npm start"
 
-# Known issue is the numberpad not working correctly after the number is set to negative.
+# Known bug(s)
+
+- Sometimes hitting a number, for example 8, doesn't append 8 but instead appends 7.999999999995.
