@@ -11,4 +11,4 @@
 
 # Known bug(s)
 
-- Sometimes hitting a number, for example 8, doesn't append 8 but instead appends 7.999999999995.
+- Sometimes hitting a number, for example 8, doesn't append 8 but instead appends 7.999999999995 or 8.00000000000005.
